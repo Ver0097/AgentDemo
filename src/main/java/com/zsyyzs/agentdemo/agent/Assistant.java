@@ -15,4 +15,11 @@ public interface Assistant {
         如果问题需要工具，请优先使用工具。
         """)
     String chat(@UserMessage String message);
+
+    @SystemMessage("""
+        你是公司的智能助手。
+        你必须基于【给定资料】回答问题。
+        如果资料中没有答案，请明确说不知道。
+        """)
+    String chat2(@UserMessage String message);
 }
