@@ -24,10 +24,15 @@ public class AgentDemoApplication {
 
     @Bean
     public Assistant assistant() {
+//        OpenAiChatModel model = OpenAiChatModel.builder()
+//                .apiKey(System.getenv("OPENAI_API_KEY"))
+//                .modelName("gpt-4o-mini")
+//                .temperature(0.2)
+//                .build();
         OpenAiChatModel model = OpenAiChatModel.builder()
-                .apiKey(System.getenv("OPENAI_API_KEY"))
+                .baseUrl("http://langchain4j.dev/demo/openai/v1")
+                .apiKey("demo")
                 .modelName("gpt-4o-mini")
-                .temperature(0.2)
                 .build();
 
         return AiServices.builder(Assistant.class)

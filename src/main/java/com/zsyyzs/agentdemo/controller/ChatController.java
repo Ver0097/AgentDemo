@@ -20,7 +20,7 @@ public class ChatController {
         return assistant.chat(message);
     }
 
-    @PostMapping
+    /*@PostMapping
     public String chat2(@RequestBody String message) {
 
         var contexts = ragService.search(message);
@@ -39,5 +39,5 @@ public class ChatController {
         );
 
         return assistant.chat(prompt);
-    }
+    }*/
 }
