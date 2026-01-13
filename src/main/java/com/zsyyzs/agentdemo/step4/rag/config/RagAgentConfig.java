@@ -1,7 +1,7 @@
-package com.zsyyzs.agentdemo.rag.config;
+package com.zsyyzs.agentdemo.step4.rag.config;
 
-import com.zsyyzs.agentdemo.rag.agent.RagAgent;
-import com.zsyyzs.agentdemo.rag.tool.RagTool;
+import com.zsyyzs.agentdemo.step4.rag.agent.RagAgent;
+import com.zsyyzs.agentdemo.step4.rag.tool.RagTool;
 import dev.langchain4j.model.openai.OpenAiChatModel;
 import dev.langchain4j.service.AiServices;
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package com.zsyyzs.agentdemo.rag.config;
+package com.zsyyzs.agentdemo.step4.rag.config;
 
 import dev.langchain4j.store.embedding.EmbeddingStore;
 import dev.langchain4j.store.embedding.inmemory.InMemoryEmbeddingStore;

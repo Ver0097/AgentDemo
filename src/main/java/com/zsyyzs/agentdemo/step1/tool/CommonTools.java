@@ -1,4 +1,4 @@
-package com.zsyyzs.agentdemo.tool;
+package com.zsyyzs.agentdemo.step1.tool;
 import dev.langchain4j.agent.tool.Tool;
 import java.time.LocalDateTime;
 

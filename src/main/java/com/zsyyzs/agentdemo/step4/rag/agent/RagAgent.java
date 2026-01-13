@@ -1,4 +1,4 @@
-package com.zsyyzs.agentdemo.rag.agent;
+package com.zsyyzs.agentdemo.step4.rag.agent;
 
 import dev.langchain4j.service.SystemMessage;
 import dev.langchain4j.service.UserMessage;

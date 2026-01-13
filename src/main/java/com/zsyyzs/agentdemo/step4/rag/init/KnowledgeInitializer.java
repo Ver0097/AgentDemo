@@ -1,4 +1,4 @@
-package com.zsyyzs.agentdemo.rag.init;
+package com.zsyyzs.agentdemo.step4.rag.init;
 
 import dev.langchain4j.data.embedding.Embedding;
 import dev.langchain4j.model.embedding.EmbeddingModel;

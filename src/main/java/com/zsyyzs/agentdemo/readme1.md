@@ -29,6 +29,7 @@ langchain4j-agent-demo
 └── CommonTools.java
 
 三、pom.xml（重点依赖）
+``` 
 <dependencies>
 <!-- Spring Boot -->
 <dependency>
@@ -50,7 +51,7 @@ langchain4j-agent-demo
         <version>0.31.0</version>
     </dependency>
 </dependencies>
-
+```
 
 ⚠️ 注意：
 
@@ -59,7 +60,7 @@ Java 17+
 LangChain4j 版本尽量保持一致
 
 四、Tool 定义（Agent 的“手”）
-package com.example.agent.tool;
+```package com.example.agent.tool;
 
 import dev.langchain4j.agent.tool.Tool;
 
@@ -77,7 +78,7 @@ public class CommonTools {
         return a + b;
     }
 }
-
+```
 这里你要注意的 3 点（非常重要）：
 
 @Tool = 对 LLM 暴露的能力
@@ -87,7 +88,7 @@ public class CommonTools {
 注释越清晰，Agent 越聪明
 
 五、Agent 接口（核心）
-package com.example.agent.agent;
+```package com.example.agent.agent;
 
 import dev.langchain4j.service.SystemMessage;
 import dev.langchain4j.service.UserMessage;
@@ -101,12 +102,12 @@ public interface Assistant {
         """)
     String chat(@UserMessage String message);
 }
-
+```
 
 👉 Agent 的“人格 + 行为约束”就在这里
 
 六、Spring Boot 启动 & Agent 装配（重点）
-package com.example.agent;
+```package com.example.agent;
 
 import com.example.agent.agent.Assistant;
 import com.example.agent.tool.CommonTools;
@@ -138,7 +139,7 @@ public class AgentDemoApplication {
                 .build();
     }
 }
-
+```
 这里是 Agent 工程的核心
 
 AiServices = Agent Runtime
@@ -148,7 +149,7 @@ tools() = Agent 可用能力
 LLM 决定 是否 & 何时调用 Tool
 
 七、Controller（像普通后端一样用 Agent）
-package com.example.agent.controller;
+```package com.example.agent.controller;
 
 import com.example.agent.agent.Assistant;
 import org.springframework.web.bind.annotation.*;
@@ -168,7 +169,7 @@ public class ChatController {
         return assistant.chat(message);
     }
 }
-
+```
 八、如何运行 & 测试
 1️⃣ 设置环境变量
 export OPENAI_API_KEY=sk-xxx

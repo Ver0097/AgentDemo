@@ -1,4 +1,4 @@
-package com.zsyyzs.agentdemo.rag.tool;
+package com.zsyyzs.agentdemo.step4.rag.tool;
 
 import dev.langchain4j.agent.tool.Tool;
 import dev.langchain4j.data.embedding.Embedding;

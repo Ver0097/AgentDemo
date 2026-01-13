@@ -1,4 +1,4 @@
-package com.zsyyzs.agentdemo.agent;
+package com.zsyyzs.agentdemo.step1.agent;
 
 import dev.langchain4j.service.SystemMessage;
 import dev.langchain4j.service.UserMessage;
@@ -16,10 +16,5 @@ public interface Assistant {
         """)
     String chat(@UserMessage String message);
 
-    @SystemMessage("""
-        你是公司的智能助手。
-        你必须基于【给定资料】回答问题。
-        如果资料中没有答案，请明确说不知道。
-        """)
-    String chat2(@UserMessage String message);
+
 }

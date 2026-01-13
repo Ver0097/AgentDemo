@@ -1,7 +1,7 @@
 package com.zsyyzs.agentdemo;
 
-import com.zsyyzs.agentdemo.agent.Assistant;
-import com.zsyyzs.agentdemo.tool.CommonTools;
+import com.zsyyzs.agentdemo.step1.agent.Assistant;
+import com.zsyyzs.agentdemo.step1.tool.CommonTools;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import dev.langchain4j.model.openai.OpenAiChatModel;
