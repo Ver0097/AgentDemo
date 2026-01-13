@@ -20,24 +20,5 @@ public class ChatController {
         return assistant.chat(message);
     }
 
-    /*@PostMapping
-    public String chat2(@RequestBody String message) {
 
-        var contexts = ragService.search(message);
-
-        String prompt = """
-        【资料】
-        %s
-
-        【问题】
-        %s
-        """.formatted(
-                contexts.stream()
-                        .map(c -> c.text())
-                        .reduce("", (a, b) -> a + "\n" + b),
-                message
-        );
-
-        return assistant.chat(prompt);
-    }*/
 }
