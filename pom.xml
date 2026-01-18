@@ -60,6 +60,7 @@
             <version>${langchain4j.version}</version>
         </dependency>
         <!-- Embedding -->
+        <!-- 向量库（示例用内存，生产换 Milvus / PGVector） -->
         <dependency>
             <groupId>dev.langchain4j</groupId>
             <artifactId>langchain4j-embeddings</artifactId>
